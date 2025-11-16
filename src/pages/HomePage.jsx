@@ -1,3 +1,4 @@
+import Jumbo from "../assets/img/jumbo.png"
 export default function HomePage() {
 
 
@@ -6,41 +7,19 @@ export default function HomePage() {
             <div className="row align-items-md-stretch">
                 <div className="col-md-6">
                     <div
-                        className="h-100 p-5 text-white bg-primary border rounded-3"
+                        className="h-100 p-5 rounded-3"
                     >
-                        <h2>Change the background</h2>
+                        <h2>Jon & Jon Shop</h2>
                         <p>
-                            Swap the background-color utility and add a `.text-*` color
-                            utility to mix up the jumbotron look. Then, mix and match with
-                            additional component themes and more.
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod quidem unde eos modi aperiam ut, a assumenda quae dolorem reiciendis similique officiis qui est nemo et ullam aspernatur explicabo illo.
                         </p>
-                        <button
-                            className="btn btn-outline-primary"
-                            type="button"
-                        >
-                            Example button
-                        </button>
+
                     </div>
                 </div>
                 <div className="col-md-6">
-                    <div
-                        className="h-100 p-5 bg-primary border rounded-3"
-                    >
-                        <h2>Add borders</h2>
-                        <p>
-                            Or, keep it light and add a border for some added definition
-                            to the boundaries of your content. Be sure to look under the
-                            hood at the source HTML here as we've adjusted the alignment and
-                            sizing of both column's content for equal-height.
-                        </p>
-                        <button
-                            className="btn Swap the background-color utility and add a `.text-*` color
-                        utility to mix up the jumbotron look. Then, mix and match with
-                        additional component themes and more."
-                            type="button"
-                        >
-                            Example button
-                        </button>
+                    <div id="jumbo-img" className="h-100 p-5 rounded-3" >
+                        <img src={Jumbo} alt="" />
+
                     </div>
                 </div>
             </div>
