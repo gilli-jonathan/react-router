@@ -1,4 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
+import Logo from '../assets/img/ghost.png'
 
 export default function Header() {
 
@@ -13,9 +14,13 @@ export default function Header() {
 
     return (
         <header>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+
                 <div className="container px-4 px-lg-5">
-                    <Link className="navbar-brand" to="/">ICON</Link>
+                    <div id="logo-container">
+                        <Link className="navbar-brand" to="/"><img src={Logo} alt="" /></Link>
+                    </div>
+
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span className="navbar-toggler-icon"></span></button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
 
@@ -34,9 +39,8 @@ export default function Header() {
 
 
                         <form className="d-flex">
-                            <button className="btn btn-outline-dark" type="submit">
-                                <i className="bi-cart-fill me-1"></i>
-                                Carrello
+                            <button className="btn btn-outline-light" type="submit">
+                                <i class="bi bi-bag me-1"></i>
                                 <span className="badge bg-dark text-white ms-1 rounded-pill">0</span>
                             </button>
                         </form>
