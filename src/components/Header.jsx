@@ -43,6 +43,12 @@ export default function Header() {
                                 <i class="bi bi-bag me-1"></i>
                                 <span className="badge bg-dark text-white ms-1 rounded-pill">0</span>
                             </button>
+
+
+                            {/* <button className="btn btn-outline-danger" type="submit">
+                                <i class="bi bi-heart-fill"></i>
+                                <span className="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                            </button> */}
                         </form>
                     </div>
                 </div>

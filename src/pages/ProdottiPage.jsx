@@ -35,7 +35,7 @@ export default function ProdottiPage(arr) {
 
                         {prodotti.map((obj) => (
                             <div className="col mb-5">
-                                <div className="card h-100">
+                                <div className="card h-100 p-4">
 
                                     {/* <!-- Immagine--> */}
                                     <div id="img-daddy">
@@ -55,7 +55,7 @@ export default function ProdottiPage(arr) {
                                     </div>
 
                                     {/* <!-- cose da fare--> */}
-                                    <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div className="card-footer pt-0 border-top-0 bg-transparent">
                                         <div className="text-center">
 
                                             <a class="btn btn-outline-dark mt-auto m-2" href="#">info</a>
