@@ -1,10 +1,25 @@
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import axios from "axios"
 
 
 export default function ProdottiPage(arr) {
 
     const prodotti_link = "https://fakestoreapi.com/products"
+
+    const [prodotti, setProdotti] = useState([])
+
+    useEffect(() => axiosCall(), [])
+
+    function axiosCall() {
+        axios.get(prodotti_link)
+            .then((resp) => setProdotti(resp.data))
+            .catch((err) => alert('errore di caricamento, mi dispiace'));
+
+    }
+
+
+
+
 
 
 
@@ -18,7 +33,7 @@ export default function ProdottiPage(arr) {
                     {/* GENITORE DELLE CARD */}
                     <div className="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
 
-                        {products.map((obj) => (
+                        {prodotti.map((obj) => (
                             <div className="col mb-5">
                                 <div className="card h-100">
 
@@ -35,7 +50,7 @@ export default function ProdottiPage(arr) {
                                             {/* <!-- Nome--> */}
                                             <h5 className="fw-bolder">{obj.title}</h5>
                                             {/* <!-- Prezzo--> */}
-                                            {obj.price}
+                                            {obj.price} $
                                         </div>
                                     </div>
 
