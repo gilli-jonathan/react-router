@@ -1,8 +1,9 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, useParams } from 'react-router-dom'
 import DefaultLayout from './Layout/DefaultLayout'
 import HomePage from './pages/HomePage'
 import ChiSiamoPage from './pages/ChiSiamoPage'
 import ProdottiPage from './pages/ProdottiPage'
+import ProdottoSingoloPage from './pages/ProdottoSingoloPage'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/chi-siamo" element={<ChiSiamoPage />} />
             <Route path="/prodotti" element={<ProdottiPage />} />
+            <Route path="/prodotti/:id" element={<ProdottoSingoloPage />} />
           </Route>
         </Routes>
       </BrowserRouter>
